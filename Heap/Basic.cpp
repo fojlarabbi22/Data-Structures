@@ -51,6 +51,7 @@ void print_heap() {
     for(int i = 0; i < heap.size(); i++) {
         cout << heap[i] << " ";
     }
+    cout << '\n';
 }
 
 int main() {
