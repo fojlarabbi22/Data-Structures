@@ -47,7 +47,7 @@ public:
             else return false;
             // v has next reference but d doesn't ("hard");
         }
-        return true;
+        return cur->flag; // For prefix search, just use "return true;"
     }
 };
 
