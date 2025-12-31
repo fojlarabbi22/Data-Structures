@@ -19,7 +19,7 @@ public:
 class Trie {
 public:
     Node *root = new Node();
-
+    // O(L)  [here L is the length of the word]
     void insert(string word) {
         Node *cur = root;
         for(auto ch: word) {
@@ -36,6 +36,7 @@ public:
         cur->flag = true;
     }
 
+    // O(L)
     bool search(string word) {
         Node *cur = root;
         for(auto ch: word) {
