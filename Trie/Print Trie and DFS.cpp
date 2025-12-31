@@ -33,6 +33,7 @@ public:
     }
 
     // For print purpose
+    // O(T)  [here T = total number of characters stored in the trie]
     void dfs(Node* cur, string &word) {
         if(cur->flag) {
             cout << word << '\n';
